@@ -7,4 +7,10 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'WebKeret03';
+
+  books = ['Harry Potter', 'Lord of the Rings', 'Star Wars', 'Warhammer'];
+
+  handleClick() {
+    this.title = 'Kattintottunk a gombon';
+  }
 }
