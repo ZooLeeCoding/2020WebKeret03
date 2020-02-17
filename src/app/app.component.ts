@@ -13,4 +13,8 @@ export class AppComponent {
   handleClick() {
     this.title = 'Kattintottunk a gombon';
   }
+
+  buyBook(title: string) {
+    this.title = 'Megvettem a ' + title + ' című könyvet';
+  }
 }

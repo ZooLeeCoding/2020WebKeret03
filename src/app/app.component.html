@@ -5,10 +5,12 @@
   Ez egy gomb
 </button>
 <ul>
-  <li *ngFor="let book of books">
+  <li *ngFor="let book of books" (click)="buyBook(book)">
     {{book}}
   </li>
 </ul>
 <h2 *ngIf="title === 'WebKeret03'">
   Ez most látszódik
 </h2>
+<input type='text' placeholder='szoveg' [(ngModel)]='title'>
+<app-string-ops></app-string-ops>
